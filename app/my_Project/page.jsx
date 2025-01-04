@@ -1,5 +1,10 @@
+import LatestProject from "@/components/latestProject";
 import React from "react";
 
 export default function MyProject() {
-  return <div></div>;
+  return (
+    <section className="mt-20">
+      <LatestProject text="Contact me" />
+    </section>
+  );
 }

@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import HeroArea from "@/components/HeroArea";
+import LatestProject from "@/components/latestProject";
 import Services from "@/components/Services";
 import { Airplay, Flame, SquareChartGantt, SquareTerminal } from "lucide-react";
 
@@ -43,6 +44,7 @@ export default function Home() {
           </Services>
         </div>
       </section>
+      <LatestProject text="All project" />
     </>
   );
 }
