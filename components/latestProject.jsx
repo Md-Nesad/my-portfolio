@@ -45,9 +45,9 @@ export default function LatestProject({ text }) {
   return (
     <section className="py-28 flex justify-around items-center dark:bg-black">
       <div className="space-y-3">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center font-bold">
           <Flame className="text-orange-400" />
-          <h1>Latest project</h1>
+          <h1>Latest projects</h1>
         </div>
         <p className="pb-3">
           These projects are made by <br /> React js, Next js and firebase.
