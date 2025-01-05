@@ -41,7 +41,7 @@ export default function Share() {
       </Link>
 
       <Link
-        href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
+        href={"https://github.com/Md-Nesad?tab=repositories"}
         target="blank"
       >
         <Github />
