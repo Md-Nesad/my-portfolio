@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="container flex justify-between h-[12vh] items-center">
         <div className="logo">
           <Link href={"/"}>
-            <h4 className="text-2xl text-orange-400 tracking-tight font-bold">
+            <h4 className="text-2xl text-[#F59E18] tracking-tight font-bold">
               Portfolio <span className=" text-white uppercase">Website</span>
             </h4>
           </Link>

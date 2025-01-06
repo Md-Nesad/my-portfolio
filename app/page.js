@@ -13,7 +13,7 @@ export default function Home() {
       <AboutMe />
       <section className="dark:bg-black dark:text-black pb-20">
         <div className="flex gap-4 items-center font-bold pb-32 place-content-center">
-          <Flame className="text-orange-500" />
+          <Flame className="text-[#F59E18]" />
           <h1 className="dark:text-white">Services</h1>
         </div>
 

@@ -11,7 +11,9 @@ export default function Footer() {
         </h1>
 
         <Link href={"/contact"}>
-          <Button className="bg-orange-400 rounded-full">Contact me</Button>
+          <Button className="bg-[#F59E18] hover:bg-[#127A88] text-lg transition rounded-full">
+            Contact me
+          </Button>
         </Link>
       </div>
 

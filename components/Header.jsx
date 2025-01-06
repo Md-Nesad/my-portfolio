@@ -18,16 +18,20 @@ export default function Header() {
             basic of backend.
           </p>
 
-          <div className="space-x-2">
+          <div className="space-x-4 pb-5">
             <Link href={"/contact"}>
-              <Button>Contact me</Button>
+              <Button className="bg-[#F59E18] rounded-full text-lg hover:bg-[#127A88] transition dark:text-white">
+                Contact me
+              </Button>
             </Link>
-            <Button>Download CV</Button>
+            <Button className="bg-[#F59E18] rounded-full text-lg hover:bg-[#127A88] transition dark:text-white">
+              Visit my CV
+            </Button>
           </div>
           <Share />
         </div>
 
-        <div className="hidden sm:block md:dark:ring-1 md:dark:ring-white rounded-md">
+        <div className="hidden sm:block md:dark:ring-1 md:dark:ring-[#ffd18d] rounded-md">
           <Image
             src={InnerImage}
             alt="innerImage"

@@ -46,7 +46,7 @@ export default function LatestProject({ text }) {
     <section className="py-28 flex justify-around items-center dark:bg-black">
       <div className="space-y-3">
         <div className="flex gap-4 items-center font-bold">
-          <Flame className="text-orange-400" />
+          <Flame className="text-[#F59E18]" />
           <h1>Latest projects</h1>
         </div>
         <p className="pb-3">
@@ -56,7 +56,7 @@ export default function LatestProject({ text }) {
         {text === "All project" ? (
           <>
             <Link href={"/my_Project"}>
-              <Button className="rounded-full px-8 bg-orange-400">
+              <Button className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88]">
                 {text}
               </Button>
             </Link>
@@ -64,7 +64,7 @@ export default function LatestProject({ text }) {
         ) : (
           <>
             <Link href={"/contact"}>
-              <Button className="rounded-full px-8 bg-orange-400">
+              <Button className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88]">
                 {text}
               </Button>
             </Link>
@@ -79,7 +79,9 @@ export default function LatestProject({ text }) {
             {projects.map((item) => (
               <Card key={item.id} className="dark:bg-white dark:text-black">
                 <CardContent className=" w-[400px]">
-                  <Badge className="bg-orange-400 mt-3">{item.badge}</Badge>
+                  <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
+                    {item.badge}
+                  </Badge>
                   <Image className="my-4" src={item.image} alt="Slider" />
                   <div className="text-center bg-gray-300 py-2 rounded">
                     <span className="text-xl font-semibold">{item.title}</span>
@@ -89,8 +91,8 @@ export default function LatestProject({ text }) {
               </Card>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="bg-[#F59E18] hover:bg-[#127A88]" />
+          <CarouselNext className="bg-[#F59E18] hover:bg-[#127A88]" />
         </Carousel>
       </div>
     </section>

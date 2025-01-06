@@ -36,7 +36,7 @@ export default function Reviews() {
   return (
     <section className="pb-28 dark:bg-black">
       <div className="flex gap-4 items-center font-bold pb-32 place-content-center">
-        <Star className="text-white bg-orange-500 rounded-full" />
+        <Star className="text-white bg-[#F59E18] rounded-full" />
         <h1 className="dark:text-white">Reviews</h1>
       </div>
 
@@ -44,11 +44,11 @@ export default function Reviews() {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="w-[360px] bg-gray-300 h-[250px] py-8 px-6 rounded-md drop-shadow-xl dark:bg-white dark:text-black"
+            className="w-[360px] h-[250px] py-8 px-6 rounded-md drop-shadow-xl bg-white dark:text-black"
           >
             <div className="flex items-center gap-3">
               <Image
-                className=" ring-[3px] rounded-full ring-orange-300"
+                className=" ring-[3px] rounded-full ring-[#F59E18]"
                 src={review.image}
                 alt="reviews"
                 width={70}
