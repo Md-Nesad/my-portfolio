@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import DarkModeToggle from "./darkModeToggler";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const currentPath = usePathname();
@@ -70,7 +71,12 @@ const Navbar = () => {
       </div>
 
       {toggler ? (
-        <div className="py-5 space-y-2 slide-in-from-top-14">
+        <motion.div
+          initial={{ y: -40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="py-5 space-y-2 slide-in-from-top-14"
+        >
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link
               href={"/"}
@@ -107,7 +113,7 @@ const Navbar = () => {
               Contact me
             </Link>
           </div>
-        </div>
+        </motion.div>
       ) : (
         ""
       )}
