@@ -19,7 +19,7 @@ export function AlertDialogDemo({ name, setname, message, setmessage }) {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button className="px-10 py-6 text-lg rounded-full bg-[#F59E18] hover:bg-[#127A88] transition dark:text-white">
+        <Button className="px-10 py-6 text-lg rounded-full bg-[#F59E18] hover:bg-[#127A88] transition dark:text-white hover:scale-105">
           Let's talk
         </Button>
       </AlertDialogTrigger>

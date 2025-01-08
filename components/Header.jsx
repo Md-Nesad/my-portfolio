@@ -20,11 +20,11 @@ export default function Header() {
 
           <div className="space-x-4 pb-5 md:flex sm:space-y-2 md:space-y-0">
             <Link href={"/contact"}>
-              <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white">
+              <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white hover:scale-105">
                 Contact me
               </Button>
             </Link>
-            <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white">
+            <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white hover:scale-105">
               Visit my CV
             </Button>
           </div>

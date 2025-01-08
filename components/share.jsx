@@ -15,6 +15,7 @@ export default function Share() {
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Linkedin />
       </Link>
@@ -22,6 +23,7 @@ export default function Share() {
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Facebook />
       </Link>
@@ -29,6 +31,7 @@ export default function Share() {
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Twitter />
       </Link>
@@ -36,6 +39,7 @@ export default function Share() {
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Instagram />
       </Link>
@@ -43,6 +47,7 @@ export default function Share() {
       <Link
         href={"https://github.com/Md-Nesad?tab=repositories"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Github />
       </Link>
@@ -50,6 +55,7 @@ export default function Share() {
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"
+        className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
         <Youtube />
       </Link>

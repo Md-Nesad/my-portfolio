@@ -1,3 +1,4 @@
+"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -11,35 +12,77 @@ import Image from "next/image";
 import { Flame } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function LatestProject({ text }) {
+  const ref = useRef(null); // Reference for the target div
+  const isInView = useInView(ref, { once: true });
   return (
     <section className="py-28 md:flex md:justify-around md:items-center dark:bg-black">
-      <div className="space-y-3 max-md:place-items-center max-md:mb-10">
-        <div className="flex gap-4 items-center font-bold">
+      <div className="space-y-3 max-md:place-items-center text-center max-md:mb-10">
+        <motion.div
+          ref={ref}
+          initial={{ scale: 0 }}
+          animate={isInView ? { scale: 1 } : {}}
+          transition={{
+            duration: 1.0,
+          }}
+          className="flex gap-4 items-center font-bold"
+        >
           <Flame className="text-[#F59E18]" />
           <h1>Latest projects</h1>
-        </div>
-        <p className="pb-3">
+        </motion.div>
+        <motion.p
+          ref={ref}
+          initial={{ scale: 0 }}
+          animate={isInView ? { scale: 1 } : {}}
+          transition={{
+            duration: 1.0,
+          }}
+          className="pb-3"
+        >
           These projects are made by <br /> React js, Next js and firebase.
-        </p>
+        </motion.p>
         {/* conditionaly link to All project and contact page */}
         {text === "All project" ? (
-          <>
+          <motion.div
+            ref={ref}
+            initial={{ scale: 0 }}
+            animate={isInView ? { scale: 1 } : {}}
+            transition={{
+              duration: 1.0,
+            }}
+          >
             <Link href={"/my_Project"}>
-              <Button className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88]">
+              <Button
+                ref={ref}
+                initial={{ scale: 0 }}
+                animate={isInView ? { scale: 1 } : {}}
+                transition={{
+                  duration: 1.0,
+                }}
+                className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88] hover:scale-105 transition"
+              >
                 {text}
               </Button>
             </Link>
-          </>
+          </motion.div>
         ) : (
-          <>
+          <motion.div
+            ref={ref}
+            initial={{ scale: 0 }}
+            animate={isInView ? { scale: 1 } : {}}
+            transition={{
+              duration: 1.0,
+            }}
+          >
             <Link href={"/contact"}>
-              <Button className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88]">
+              <Button className="rounded-full px-8 bg-[#F59E18] text-lg text-white hover:bg-[#127A88] hover:scale-105 transition">
                 {text}
               </Button>
             </Link>
-          </>
+          </motion.div>
         )}
       </div>
 
