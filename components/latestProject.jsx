@@ -96,7 +96,12 @@ export default function LatestProject({ text }) {
                   <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                     {item.badge}
                   </Badge>
-                  <Image className="my-4" src={item.image} alt="Slider" />
+                  <Image
+                    className="my-4"
+                    src={item.image}
+                    alt="Slider"
+                    priority={true}
+                  />
                   <div className="text-center bg-gray-300 py-2 rounded">
                     <span className="text-xl font-semibold">{item.title}</span>
                     <p className="mt-4">{item.description.slice(0, 57)}....</p>

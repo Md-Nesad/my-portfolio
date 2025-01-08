@@ -47,6 +47,7 @@ export default function MyProject() {
                         className="my-4 shadow-white shadow-inner rounded"
                         src={item.image}
                         alt="Slider"
+                        priority={true}
                       />
                       <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                         <span className="text-xl font-semibold">
@@ -78,7 +79,12 @@ export default function MyProject() {
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
-                        <Image className="my-4" src={item.image} alt="Slider" />
+                        <Image
+                          className="my-4"
+                          src={item.image}
+                          alt="Slider"
+                          priority={true}
+                        />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
                             {item.title}
@@ -109,7 +115,12 @@ export default function MyProject() {
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
-                        <Image className="my-4" src={item.image} alt="Slider" />
+                        <Image
+                          className="my-4"
+                          src={item.image}
+                          alt="Slider"
+                          priority={true}
+                        />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
                             {item.title}
@@ -139,7 +150,12 @@ export default function MyProject() {
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
-                        <Image className="my-4" src={item.image} alt="Slider" />
+                        <Image
+                          className="my-4"
+                          src={item.image}
+                          alt="Slider"
+                          priority={true}
+                        />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
                             {item.title}

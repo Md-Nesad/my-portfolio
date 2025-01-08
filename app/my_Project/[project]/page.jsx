@@ -23,12 +23,11 @@ export default function SinglePorject() {
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div>
+        <div className="w-[500px]">
           <Image
             className="h-[350px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110 max-sm:w-96 max-sm:mx-auto"
             src={singleProject.image}
             alt={singleProject.badge}
-            width={500}
             priority={true}
           />
         </div>
