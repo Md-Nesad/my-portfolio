@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section className="mt-20 text-black dark:text-white dark:bg-black">
       {/* top area */}
-      <div className="flex pt-20 items-center justify-around">
+      <div className="sm:flex pt-20 items-center justify-around max-sm:place-items-center max-sm:space-y-20">
         {/* text */}
         <div className="space-y-4 text-lg">
           <div className="flex gap-3 items-center text-[#F59E18]">
@@ -26,23 +26,23 @@ export default function Contact() {
           <h1 className=" leading-10">
             Let's Work <br /> Together.
           </h1>
-          <p className="w-[300px] leading-6">
+          <p className="md:w-[300px] sm:w-52 max-sm:w-[300px] leading-6">
             Providing best quality services give me a lot of confident to work
             hard and bring success in my role.
           </p>
         </div>
 
         {/* image */}
-        <div>
+        <div className="max-md:w-96">
           <Image className=" dark:hidden" src={light} alt="contact" />
           <Image className=" dark:block hidden" src={dark} alt="contact" />
         </div>
       </div>
 
       {/* bottom area */}
-      <div className="flex pt-36 py-64 justify-around items-center">
+      <div className="md:flex pt-36 py-64 md:justify-around md:items-center max-sm:place-items-center">
         {/* contact information */}
-        <div className="space-y-6 text-xl">
+        <div className="space-y-6 text-xl max-sm:mb-10">
           <div className="flex gap-4 items-center">
             <Mail strokeWidth={2.75} className="text-[#F59E18]" />
             <p>nesadm26@gmail.com</p>

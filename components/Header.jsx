@@ -6,7 +6,7 @@ import Share from "./share";
 
 export default function Header() {
   return (
-    <header className="h-[80vh] mt-20 md:p-20 py-10 pl-7 dark:bg-black">
+    <header className="h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 pl-7 dark:bg-black">
       <div className="flex justify-around items-center">
         <div className=" space-y-3 md:space-y-4 ">
           <p>FRONT END DEVELOPER</p>
@@ -18,13 +18,13 @@ export default function Header() {
             basic of backend.
           </p>
 
-          <div className="space-x-4 pb-5">
+          <div className="space-x-4 pb-5 md:flex sm:space-y-2 md:space-y-0">
             <Link href={"/contact"}>
-              <Button className="bg-[#F59E18] rounded-full text-lg hover:bg-[#127A88] transition dark:text-white">
+              <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white">
                 Contact me
               </Button>
             </Link>
-            <Button className="bg-[#F59E18] rounded-full text-lg hover:bg-[#127A88] transition dark:text-white">
+            <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white">
               Visit my CV
             </Button>
           </div>

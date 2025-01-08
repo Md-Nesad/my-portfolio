@@ -21,8 +21,8 @@ export const allProjects = [
     name: "E-Commerce Application",
     optional: "full stack",
     title: "E-commerce_App",
-    description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+    language: "Tailwindcss, React.js, Redux, Firebase",
+    description: `_Built a dynamic and fully functional e-commerce platform using React.js and TailwindCSS for a modern, responsive design. Integrated Context API and Redux for efficient state management, along with Firebase for backend support. Features include product filtering, dynamic routing, an intuitive "Add to Cart" and "Delete from Cart" system, a seamless "Buy Now" functionality, and real-time notifications using the Toast package. This project demonstrates expertise in building scalable front-end applications with a robust user experience.`,
   },
   {
     id: 1,
@@ -31,7 +31,9 @@ export const allProjects = [
     name: "Movie Application",
     optional: "Next Project",
     title: "Movie_App",
-    description: "This is a movie app using an external API called Movie API",
+    language: "Tailwindcss, Next.js, Movie API",
+    description:
+      "_Developed a sleek and responsive movie application using Next.js and TailwindCSS for a modern user interface and optimal performance. Integrated a Movie API to fetch detailed movie data, enabling features like dynamic search functionality, dynamic routing, and individual movie detail pages. This project highlights my skills in building interactive and efficient applications with real-time data fetching and a focus on user experience.",
   },
 
   {
@@ -41,47 +43,51 @@ export const allProjects = [
     name: "Dashboard Application",
     optional: "Next Project",
     title: "Dashboard_App",
+    language: "Tailwindcss, Next.js, shadcn/ui",
     description:
-      "This is a dashboard app with shadcn/ui and server side rendering",
+      "_Created a fully responsive and interactive dashboard application using Next.js, TailwindCSS, and shadcn/ui for a modern and polished design. Integrated Recharts to visualize data flow effectively, with support for dark mode for enhanced user experience. Features include dynamic routing for editing details and seamless adaptability across all devices. This project showcases my ability to develop feature-rich, user-friendly, and visually appealing web applications.",
   },
   {
     id: 3,
+    badge: "JavaScript",
+    image: mindayClinic,
+    name: "Mindray Clinic software",
+    title: "Mindray_App",
+    language: "HTTML, CSS, JAVASCRIPT",
+    description:
+      "_Developed a unique and functional CBC software using raw HTML, CSS, and JavaScript to demonstrate core front-end development skills. This project showcases expertise in DOM manipulation, looping, and creating a to-do list feature with JavaScript. Designed with a focus on a custom and visually appealing interface, highlighting my ability to build creative and interactive web solutions from scratch.",
+  },
+  {
+    id: 4,
     badge: "React js",
     image: todo,
     name: "To do Application",
     title: "Simple_Todo_App",
+    language: "Tailwindcss, React.js",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
-  },
-
-  {
-    id: 4,
-    badge: "React js",
-    image: weatherApp,
-    name: "Weather Application",
-    title: "Weather_App",
-    description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Built a simple and efficient to-do app using React.js and TailwindCSS for a clean and responsive design. Key features include adding and deleting tasks, with the ability to save the to-do list in local storage for persistent data. This project demonstrates my ability to create practical and user-friendly applications with state management and local storage integration.",
   },
 
   {
     id: 5,
     badge: "React js",
-    image: ticTocToe,
-    name: "Tic-Toc-Toe Application",
-    title: "Tic_Toc_Toe_App",
+    image: weatherApp,
+    name: "Weather Application",
+    title: "Weather_App",
+    language: "Tailwindcss, React.js, Weather API",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Developed a responsive weather application using React.js and TailwindCSS for a clean and modern interface. Integrated a Weather API to fetch real-time weather details for various locations, featuring a dynamic search functionality. This project highlights my skills in building interactive and API-driven applications with a focus on usability and responsive design.",
   },
 
   {
     id: 6,
-    badge: "JavaScript",
-    image: mindayClinic,
-    name: "Mindray Clinic software",
-    title: "Mindray_App",
+    badge: "React js",
+    image: ticTocToe,
+    name: "Tic-Toc-Toe Application",
+    title: "Tic_Toc_Toe_App",
+    language: "CSS, React.js",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Created a classic Tic-Tac-Toe game by following the React.js official documentation. This project helped me deepen my understanding of React concepts, including component-based architecture, state management, and interactive UI development. It showcases my ability to build engaging and functional applications while adhering to best practices.",
   },
 
   {
@@ -90,8 +96,9 @@ export const allProjects = [
     image: landingPage,
     name: "Landing page",
     title: "Landing_Page",
+    language: "HTTML, CSS, JAVASCRIPT",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Designed a sleek and modern landing page using HTML, CSS, and JavaScript. Key features include smooth scrolling for seamless navigation, a responsive layout for all devices, and a dynamic, responsive navbar. This project highlights my skills in creating visually appealing and user-friendly web pages with a focus on interactivity and responsive design.",
   },
 
   {
@@ -100,8 +107,9 @@ export const allProjects = [
     image: advaceTodo,
     name: "Advance To-Do Application",
     title: "Advance_To-Do_App",
+    language: "React.js Tailwindcss",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Built an advanced to-do app using React.js and TailwindCSS, featuring functionalities to add, edit, delete, and save tasks. Implemented useContext and useReducer hooks to efficiently manage complex state across the application. This project demonstrates my ability to create feature-rich, scalable, and responsive applications with robust state management.",
   },
 
   {
@@ -111,8 +119,9 @@ export const allProjects = [
     optional: "Next Project",
     name: "Portfolio Website",
     title: "Portfolio_website",
+    language: "React.js, Next.js, Tailwindcss, shadcn/ui",
     description:
-      "This is a dashboard app with shadcn/ui and server side rendering",
+      "_Created a modern and responsive portfolio website using React.js, Next.js, and TailwindCSS, with shadcn/ui for a sleek design. Integrated Lucide React, React Icons, and Framer Motion for dynamic visuals and animations. Key features include a responsive navbar, reusable components, props passing, conditional state management, dynamic data rendering with the map method, and dynamic routing to showcase individual projects on dedicated pages. Utilized React Hook Form for seamless form validation, highlighting my ability to build scalable, interactive, and professional web applications.",
   },
 
   {
@@ -120,9 +129,10 @@ export const allProjects = [
     badge: "wordpress",
     image: landingPageTwo,
     name: "Landing Page",
-    title: "Landing_Page",
+    title: "Landing_Page_Two",
+    language: "WordPress, Elementor, Gutenberg",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "_Developed a stunning and responsive landing page for Vespa Motorbike using WordPress, Elementor, and Gutenberg Page Builder. The page is optimized for performance, security, and SEO, ensuring fast loading times and high search engine visibility. This project showcases my skills in crafting visually engaging, user-friendly landing pages with a focus on delivering an excellent user experience and strong online presence.",
   },
 
   {
@@ -131,8 +141,9 @@ export const allProjects = [
     image: businessWebsite,
     name: "Business Website",
     title: "Business_Website",
+    language: "WordPress, Elementor",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "Created a professional business website for a Zym Center using WordPress and Elementor. The site is fully responsive, optimized for performance, security, and SEO, ensuring fast load times and improved search engine rankings. This project highlights my ability to design and develop user-friendly, functional websites with a focus on business growth and online visibility.",
   },
 
   {
@@ -141,8 +152,9 @@ export const allProjects = [
     image: ecommerceWebsite,
     name: "E-Commerce Website",
     title: "E-Commerce_website",
+    language: "WordPress, Elementor, WooCommerce",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "Developed a fully functional e-commerce website using WordPress, Elementor, WooCommerce, and essential plugins. The website is responsive, optimized for security, performance, and SEO to ensure fast loading times and high search engine rankings. Key features include Add to Cart, Delete from Cart, Checkout, Buy Now, and PayPal payment integration. This project demonstrates my ability to create seamless online shopping experiences with a focus on usability, security, and optimized performance.",
   },
 
   {
@@ -150,8 +162,9 @@ export const allProjects = [
     badge: "wordpress",
     image: portfolioTwo,
     name: "Portfolio website",
-    title: "Portfolio_website",
+    title: "Portfolio_website_Two",
+    language: "WordPress, Elementor, Gutenberg",
     description:
-      "This is a E-commerce. Technology used react js, redux and firebase",
+      "Built a professional personal portfolio website using WordPress and Elementor, featuring key pages such as Home, About Me, Services, and Contact Me. The site is fully responsive and optimized for performance, security, and SEO, ensuring excellent user experience and visibility. This project highlights my ability to create polished, functional, and well-optimized websites tailored to personal branding and business needs.",
   },
 ];

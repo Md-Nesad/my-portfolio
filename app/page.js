@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className="dark:text-white">Services</h1>
         </div>
 
-        <div className="md:flex place-content-center md:gap-x-20">
+        <div className="md:flex place-content-center md:gap-x-20 max-md:space-y-10 max-md:place-items-center">
           <Services
             text="Web design"
             icon={<Airplay size={70} strokeWidth={2} />}

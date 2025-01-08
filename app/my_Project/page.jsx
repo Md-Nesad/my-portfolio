@@ -32,14 +32,14 @@ export default function MyProject() {
 
           {/* get all projects */}
           <TabsContent value="All_projects">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects.slice(0, 9).map((item) => (
                 <Link href={`/my_Project/${item.title}`}>
                   <Card
                     key={item.id}
-                    className=" dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                    className=" dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                   >
-                    <CardContent className=" w-[400px]">
+                    <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                       <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                         {item.badge}
                       </Badge>
@@ -52,7 +52,9 @@ export default function MyProject() {
                         <span className="text-xl font-semibold">
                           {item.title}
                         </span>
-                        <p className="mt-4">{item.description}</p>
+                        <p className="mt-4">
+                          {item.description.slice(0, 50)}...
+                        </p>
                       </div>
                     </CardContent>
                   </Card>
@@ -63,16 +65,16 @@ export default function MyProject() {
 
           {/* get JavaScript project */}
           <TabsContent value="javascript">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
               {allProjects
                 .filter((obj) => obj.badge.includes("JavaScript"))
                 .map((item) => (
                   <Link href={`/my_Project/${item.title}`}>
                     <Card
                       key={item.id}
-                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className=" w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -81,7 +83,9 @@ export default function MyProject() {
                           <span className="text-xl font-semibold">
                             {item.title}
                           </span>
-                          <p className="mt-4">{item.description}</p>
+                          <p className="mt-4">
+                            {item.description.slice(0, 50)}...
+                          </p>
                         </div>
                       </CardContent>
                     </Card>
@@ -92,16 +96,16 @@ export default function MyProject() {
 
           {/* get React projects */}
           <TabsContent value="react">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
               {allProjects
                 .filter((obj) => obj.badge.includes("React js"))
                 .map((item) => (
                   <Link href={`/my_Project/${item.title}`}>
                     <Card
                       key={item.id}
-                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className=" w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -110,7 +114,9 @@ export default function MyProject() {
                           <span className="text-xl font-semibold">
                             {item.title}
                           </span>
-                          <p className="mt-4">{item.description}</p>
+                          <p className="mt-4">
+                            {item.description.slice(0, 50)}...
+                          </p>
                         </div>
                       </CardContent>
                     </Card>
@@ -120,16 +126,16 @@ export default function MyProject() {
           </TabsContent>
           {/* get next js project */}
           <TabsContent value="next">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
               {allProjects
                 .filter((obj) => obj.optional?.includes("Next Project"))
                 .map((item) => (
                   <Link href={`/my_Project/${item.title}`}>
                     <Card
                       key={item.id}
-                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className=" w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -138,7 +144,9 @@ export default function MyProject() {
                           <span className="text-xl font-semibold">
                             {item.title}
                           </span>
-                          <p className="mt-4">{item.description}</p>
+                          <p className="mt-4">
+                            {item.description.slice(0, 50)}...
+                          </p>
                         </div>
                       </CardContent>
                     </Card>
@@ -148,16 +156,16 @@ export default function MyProject() {
           </TabsContent>
           {/* get full stack project */}
           <TabsContent value="full_stack">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
               {allProjects
                 .filter((obj) => obj.optional?.includes("full stack"))
                 .map((item) => (
                   <Link href={`/my_Project/${item.title}`}>
                     <Card
                       key={item.id}
-                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className=" w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -171,7 +179,9 @@ export default function MyProject() {
                           <span className="text-xl font-semibold">
                             {item.title}
                           </span>
-                          <p className="mt-4">{item.description}</p>
+                          <p className="mt-4">
+                            {item.description.slice(0, 50)}...
+                          </p>
                         </div>
                       </CardContent>
                     </Card>
@@ -181,16 +191,16 @@ export default function MyProject() {
           </TabsContent>
           {/* get wordress projects */}
           <TabsContent value="wordpress">
-            <div className="grid grid-cols-3 gap-7 w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
               {allProjects
                 .filter((obj) => obj.badge.includes("wordpress"))
                 .map((item) => (
                   <Link href={`/my_Project/${item.title}`}>
                     <Card
                       key={item.id}
-                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 transition duration-300"
+                      className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className=" w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -204,7 +214,9 @@ export default function MyProject() {
                           <span className="text-xl font-semibold">
                             {item.title}
                           </span>
-                          <p className="mt-4">{item.description}</p>
+                          <p className="mt-4">
+                            {item.description.slice(0, 50)}...
+                          </p>
                         </div>
                       </CardContent>
                     </Card>

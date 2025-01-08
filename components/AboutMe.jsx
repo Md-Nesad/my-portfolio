@@ -29,8 +29,8 @@ export default function AboutMe() {
           <Image src={AboutImage} alt="AboutImage" width={700} />
         </div>
 
-        <div className="pr-40 mt-10">
-          <Tabs defaultValue="personal_Info" className="w-[500px] h-[500px] ">
+        <div className="pr-40 mt-10 pl-32 max-sm:px-5">
+          <Tabs defaultValue="personal_Info" className="w-[500px] h-[500px]">
             <TabsList>
               <TabsTrigger value="personal_Info">Personal Info</TabsTrigger>
 
@@ -39,8 +39,8 @@ export default function AboutMe() {
               <TabsTrigger value="skills">Skills</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="personal_Info">
-              <div className="mt-5">
+            <TabsContent value="personal_Info" className="max-sm:w-[400px]">
+              <div className="mt-5 max-md:mb-8">
                 <h1 className="text-xl font-bold mb-5">
                   Unmatched Service Quality for over 2 Years
                 </h1>
@@ -50,7 +50,7 @@ export default function AboutMe() {
                 </p>
               </div>
 
-              <div className=" columns-2 col-span-3 space-y-3 mt-3">
+              <div className=" columns-2 col-span-3 space-y-3 mt-3 max-sm:text-sm">
                 <div className="flex gap-3">
                   <CircleUser className="text-[#F59E18]" />
                   <p>Md. Nesad</p>
@@ -86,12 +86,15 @@ export default function AboutMe() {
               </div>
             </TabsContent>
 
-            <TabsContent value="qualification">
+            <TabsContent
+              value="qualification"
+              className="max-sm:w-[400px] max-sm:text-[12px]"
+            >
               <h1 className="font-bold text-2xl mt-5 border-[#acaaaa] border-b-2 py-2">
                 My Awesome Journey
               </h1>
               <div className="flex justify-between">
-                <div className="first-div">
+                <div className="first-div max-sm:mr-5">
                   <div className="flex gap-4 items-center mt-5 text-[#F59E18]">
                     <Columns3 />
                     <p>Experience</p>
@@ -103,10 +106,10 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">ABC Inc.</h1>
+                      <h1 className="text-xl max-sm:text-[18px]">ABC Inc.</h1>
                     </div>
                     <p className="ml-9">Front-end Developer</p>
-                    <p className="ml-9 text-sm text-[#F59E18]">
+                    <p className="ml-9 text-sm text-[#F59E18] max-sm:text-[11px]">
                       HTML, CSS, JAVASCRIPT
                     </p>
                   </div>
@@ -117,10 +120,12 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">XYZ Corporation</h1>
+                      <h1 className="text-xl max-sm:text-[16px]">
+                        XYZ Corporation
+                      </h1>
                     </div>
                     <p className="ml-9">WordPress Developer</p>
-                    <p className="ml-9 text-sm text-[#F59E18]">
+                    <p className="ml-9 text-sm text-[#F59E18] max-sm:text-[12px]">
                       Theme Customization
                     </p>
                   </div>
@@ -131,16 +136,18 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">Tech Innovators</h1>
+                      <h1 className="text-xl max-sm:text-[18px]">
+                        Tech Innovators
+                      </h1>
                     </div>
                     <p className="ml-9">React Developer</p>
-                    <p className="ml-9 text-sm text-[#F59E18]">
+                    <p className="ml-9 text-sm text-[#F59E18] max-sm:text-[12px]">
                       React + Next.js
                     </p>
                   </div>
                 </div>
 
-                <div className="second-div">
+                <div className="second-div ">
                   <div className="flex gap-4 items-center mt-5 text-[#F59E18]">
                     <GraduationCap />
                     <p>Education</p>
@@ -152,12 +159,14 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">National University</h1>
+                      <h1 className="text-xl max-sm:text-[18px]">
+                        National University
+                      </h1>
                     </div>
                     <p className="ml-8">Bechelor of Commerce</p>
 
-                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18]">
-                      <Calendar size={16} />
+                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18] max-sm:text-[12px]">
+                      <Calendar size={12} />
                       <p>2020 - 2024</p>
                     </div>
                   </div>
@@ -168,11 +177,13 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">Programming Hero</h1>
+                      <h1 className="text-xl max-sm:text-[17px]">
+                        Programming Hero
+                      </h1>
                     </div>
                     <p className="ml-9">Front-end Development</p>
-                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18]">
-                      <Calendar size={16} />
+                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18] max-sm:text-[12px]">
+                      <Calendar size={12} />
                       <p>2023 - 2025</p>
                     </div>
                   </div>
@@ -183,12 +194,14 @@ export default function AboutMe() {
                         size={18}
                         className="text-[#F59E18] bg-[#F59E18] rounded-full"
                       />
-                      <h1 className="text-xl">10 minute school</h1>
+                      <h1 className="text-xl max-sm:text-[18px]">
+                        10 minute school
+                      </h1>
                     </div>
-                    <p className="ml-9">Spoken English</p>
+                    <p className="ml-9 ">Spoken English</p>
 
-                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18]">
-                      <Calendar size={16} />
+                    <div className="flex gap-4 items-center ml-9 text-sm text-[#F59E18] max-sm:text-[12px]">
+                      <Calendar size={12} />
                       <p>2023 - 2024</p>
                     </div>
                   </div>
@@ -196,7 +209,7 @@ export default function AboutMe() {
               </div>
             </TabsContent>
 
-            <TabsContent value="skills">
+            <TabsContent value="skills" className="max-sm:w-[400px]">
               <div>
                 <div>
                   <h1 className="mt-5">Tools I use everyday...</h1>

@@ -40,7 +40,7 @@ export default function Reviews() {
         <h1 className="dark:text-white">Reviews</h1>
       </div>
 
-      <div className="flex items-start justify-evenly">
+      <div className="md:flex md:items-start md:justify-evenly max-md:space-y-10 place-items-center">
         {reviews.map((review) => (
           <div
             key={review.id}
