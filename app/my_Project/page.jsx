@@ -48,6 +48,7 @@ export default function MyProject() {
                         src={item.image}
                         alt="Slider"
                         priority={true}
+                        placeholder="blur"
                       />
                       <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                         <span className="text-xl font-semibold">
@@ -84,6 +85,7 @@ export default function MyProject() {
                           src={item.image}
                           alt="Slider"
                           priority={true}
+                          placeholder="blur"
                         />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
@@ -120,6 +122,7 @@ export default function MyProject() {
                           src={item.image}
                           alt="Slider"
                           priority={true}
+                          placeholder="blur"
                         />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
@@ -155,6 +158,7 @@ export default function MyProject() {
                           src={item.image}
                           alt="Slider"
                           priority={true}
+                          placeholder="blur"
                         />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
@@ -190,6 +194,7 @@ export default function MyProject() {
                           src={item.image}
                           priority={false}
                           alt="Slider"
+                          placeholder="blur"
                         />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
@@ -225,6 +230,7 @@ export default function MyProject() {
                           src={item.image}
                           priority={true}
                           alt="Slider"
+                          placeholder="blur"
                         />
                         <div className="text-center bg-gray-300 dark:bg-[#F59E18] dark:text-white py-2 rounded">
                           <span className="text-xl font-semibold">
