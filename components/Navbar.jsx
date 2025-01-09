@@ -72,10 +72,10 @@ const Navbar = () => {
 
       {toggler ? (
         <motion.div
-          initial={{ y: -40, opacity: 0 }}
+          initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="py-5 space-y-2 slide-in-from-top-14"
+          transition={{ duration: 0.5 }}
+          className="py-5 space-y-2 slide-in-from-top-14 hidden max-md:block"
         >
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link

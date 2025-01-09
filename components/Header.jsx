@@ -24,9 +24,11 @@ export default function Header() {
                 Contact me
               </Button>
             </Link>
-            <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white hover:scale-105">
-              Visit my CV
-            </Button>
+            <Link href={"/resume"}>
+              <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white hover:scale-105">
+                Visit my CV
+              </Button>
+            </Link>
           </div>
           <Share />
         </div>

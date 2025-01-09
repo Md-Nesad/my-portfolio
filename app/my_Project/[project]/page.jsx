@@ -29,6 +29,7 @@ export default function SinglePorject() {
             src={singleProject.image}
             alt={singleProject.badge}
             priority={true}
+            placeholder="blur"
           />
         </div>
 
