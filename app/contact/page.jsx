@@ -34,8 +34,18 @@ export default function Contact() {
 
         {/* image */}
         <div className="max-md:w-96">
-          <Image className=" dark:hidden" src={light} alt="contact" />
-          <Image className=" dark:block hidden" src={dark} alt="contact" />
+          <Image
+            className=" dark:hidden"
+            src={light}
+            alt="contact"
+            priority={true}
+          />
+          <Image
+            className=" dark:block hidden"
+            src={dark}
+            alt="contact"
+            priority={true}
+          />
         </div>
       </div>
 

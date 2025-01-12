@@ -31,6 +31,9 @@ export default function SinglePorject() {
             priority={true}
             placeholder="blur"
           />
+          {/* <div className="absolute top-1 left-1 opacity-0 hover: opacity-1">
+            <h1>Link</h1>
+          </div> */}
         </div>
 
         {/* description */}

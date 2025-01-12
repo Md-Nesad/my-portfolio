@@ -21,7 +21,7 @@ export default function Share() {
       </Link>
 
       <Link
-        href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
+        href={"https://www.facebook.com/web.developer.161242/"}
         target="blank"
         className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
@@ -29,7 +29,7 @@ export default function Share() {
       </Link>
 
       <Link
-        href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
+        href={"https://x.com/MdNesad3023"}
         target="blank"
         className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
@@ -37,7 +37,7 @@ export default function Share() {
       </Link>
 
       <Link
-        href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
+        href={"https://www.instagram.com/sahahamad87/"}
         target="blank"
         className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
@@ -45,7 +45,7 @@ export default function Share() {
       </Link>
 
       <Link
-        href={"https://github.com/Md-Nesad?tab=repositories"}
+        href={"https://github.com/Md-Nesad"}
         target="blank"
         className="hover:scale-125 transition hover:bg-[#127A88] bg-[#F59E18] text-white rounded-full p-2"
       >
