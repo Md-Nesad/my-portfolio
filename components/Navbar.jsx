@@ -14,7 +14,7 @@ const Navbar = () => {
     setToggler(!toggler);
   };
   return (
-    <nav className="z-50 w-full h-fit fixed top-0 overflow-hidden bg-[#127A88] px-10">
+    <nav className="z-50 w-full h-fit fixed top-0 overflow-hidden bg-[#127A88] sm:px-10 px-5">
       <div className="container flex justify-between h-[12vh] items-center">
         <div className="logo">
           <Link href={"/"}>
@@ -75,7 +75,7 @@ const Navbar = () => {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="py-5 space-y-2 slide-in-from-top-14 hidden max-md:block"
+          className="py-5 space-y-2 hidden max-md:block"
         >
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link

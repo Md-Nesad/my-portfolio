@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
 
         {/* image */}
-        <div className="max-md:w-96">
+        <div className="max-md:w-[350px]">
           <Image
             className=" dark:hidden"
             src={light}
