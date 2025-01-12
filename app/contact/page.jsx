@@ -50,21 +50,21 @@ export default function Contact() {
       </div>
 
       {/* bottom area */}
-      <div className="md:flex pt-36 py-64 md:justify-around md:items-center max-sm:place-items-center">
+      <div className="md:flex pt-36 py-64 md:justify-around md:items-center max-md:place-items-center">
         {/* contact information */}
-        <div className="space-y-6 text-xl max-sm:mb-10">
+        <div className="space-y-6 text-xl max-sm:text-lg max-md:mb-10 ">
           <div className="flex gap-4 items-center">
-            <Mail strokeWidth={2.75} className="text-[#F59E18]" />
+            <Mail className="text-[#F59E18] max-sm:text-xs" />
             <p>nesadm26@gmail.com</p>
           </div>
 
-          <div className="flex gap-4 items-center">
-            <House strokeWidth={2.75} className="text-[#F59E18]" />
+          <div className="flex gap-4 items-center max-sm:w-[350px]">
+            <House className="text-[#F59E18]" />
             <p>5140 Hajipara, Thakurgaon, Bangladesh.</p>
           </div>
 
           <div className="flex gap-4 items-center">
-            <Phone strokeWidth={2.75} className="text-[#F59E18]" />
+            <Phone className="text-[#F59E18]" />
             <p>+8801300113023</p>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Contact() {
         {/* form */}
         <div className="space-y-5 text-xl border dark:text-black">
           <input
-            className="w-[450px] h-12 pl-5 rounded-full focus:outline-none dark:bg-white dark:placeholder:text-black"
+            className="w-[450px] max-sm:w-[350px] h-12 pl-5 rounded-full focus:outline-none dark:bg-white dark:placeholder:text-black"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -80,7 +80,7 @@ export default function Contact() {
           />{" "}
           <br />
           <input
-            className="w-[450px] h-12 pl-5 rounded-full focus:outline-none dark:bg-white dark:placeholder:text-black"
+            className="w-[450px] max-sm:w-[350px] h-12 pl-5 rounded-full focus:outline-none dark:bg-white dark:placeholder:text-black"
             type="text"
             placeholder="Email"
           />{" "}
@@ -88,7 +88,7 @@ export default function Contact() {
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-[450px] pb-20 text-balance whitespace-pre-line pt-4 px-5  rounded-3xl focus:outline-none dark:bg-white dark:placeholder:text-black"
+            className="w-[450px] max-sm:w-[350px] pb-20 text-balance whitespace-pre-line pt-4 px-5  rounded-3xl focus:outline-none dark:bg-white dark:placeholder:text-black"
             placeholder="Type your message......"
           />
           <br />

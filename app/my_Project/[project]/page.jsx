@@ -1,11 +1,12 @@
 "use client";
-
+import React from "react";
 import NotFound from "@/app/not-found";
 import { allProjects } from "@/data/allProjects";
-import { Circle } from "lucide-react";
+import { Circle, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function SinglePorject() {
   const [more, setMore] = useState("");
@@ -23,7 +24,7 @@ export default function SinglePorject() {
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div className="w-[500px]">
+        <div className="relative group w-[500px]">
           <Image
             className="h-[350px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110 max-sm:w-96 max-sm:mx-auto"
             src={singleProject.image}
@@ -31,13 +32,15 @@ export default function SinglePorject() {
             priority={true}
             placeholder="blur"
           />
-          {/* <div className="absolute top-1 left-1 opacity-0 hover: opacity-1">
-            <h1>Link</h1>
-          </div> */}
+          <div className=" absolute top-[50%] left-[50%] opacity-0 group-hover:opacity-100 transition-opacity bg-[#F59E18] p-3 rounded-md text-white">
+            <Link href={singleProject.link} title="Go live" target="blank">
+              <ExternalLink className="" />
+            </Link>
+          </div>
         </div>
 
         {/* description */}
-        <div className="space-y-3 max-sm:w-[400px]">
+        <div className="space-y-3 max-sm:w-[400px] max-sm:mx-auto">
           <div className="flex gap-4 items-center">
             <h1 className="border-b-2 font-bold border-gray-400 pb-5 max-sm:text-2xl">
               Name: "{singleProject.title}"
@@ -57,17 +60,6 @@ export default function SinglePorject() {
             </p>
           </div>
 
-          {/* <div className="w-96 space-y-2">
-            <div className="flex gap-4 items-center">
-              <Circle
-                size={18}
-                className="text-orange-400 bg-orange-400 rounded-full"
-              />
-              <p className="text-xl">Tools and packages:</p>
-            </div>
-            <p className="ml-9 dark:text-orange-400">{singleProject.badge}</p>
-          </div> */}
-
           <div className="w-96 max-md:w-[500px] max-sm:w-[400px] space-y-2">
             <div className="flex gap-4 items-center">
               <Circle
@@ -80,7 +72,17 @@ export default function SinglePorject() {
             <p className="ml-9 dark:text-orange-400">
               {singleProject.description.slice(0, 71)}
               {more ? "" : "....."}
-              {more && singleProject.description.slice(71)} <br />
+              {more &&
+                singleProject.description
+                  .slice(71)
+                  .split("\n")
+                  .map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line.trim()}
+                      <br />
+                    </React.Fragment>
+                  ))}{" "}
+              <br />
               <button onClick={() => setMore(!more)} className=" underline">
                 {more ? "Read Less" : "Read More"}
               </button>
