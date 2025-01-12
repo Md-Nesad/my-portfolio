@@ -18,7 +18,7 @@ export default function SinglePorject() {
   }
   return (
     <div className="mt-20 pb-36 pt-10 dark:bg-black max-md:place-items-center">
-      <h1 className="font-bold text-center max-sm:text-xl">
+      <h1 className="font-bold text-center max-sm:text-lg">
         Review of {singleProject.name}
       </h1>
 
@@ -40,9 +40,9 @@ export default function SinglePorject() {
         </div>
 
         {/* description */}
-        <div className="space-y-3 max-sm:w-[340px] max-sm:mx-auto">
+        <div className="space-y-3 max-sm:w-[335px] max-sm:mx-auto max-sm:text-base">
           <div className="flex gap-4 items-center">
-            <h1 className="border-b-2 font-bold border-gray-400 pb-5 max-sm:text-2xl">
+            <h1 className="border-b-2 font-bold border-gray-400 pb-5 max-sm:text-xl">
               Name: "{singleProject.title}"
             </h1>
           </div>
@@ -53,9 +53,9 @@ export default function SinglePorject() {
                 size={18}
                 className="text-orange-400 bg-orange-400 rounded-full"
               />
-              <p className="text-xl">Technology used :</p>
+              <p className="text-xl max-sm:text-xl">Technology used :</p>
             </div>
-            <p className="ml-9 text-lg dark:text-[#F59E18]">
+            <p className="ml-9 text-lg max-sm:text-base dark:text-[#F59E18]">
               {singleProject.language}
             </p>
           </div>
