@@ -107,11 +107,22 @@ export default function LatestProject({ text }) {
                     <p className="mt-4">{item.description.slice(0, 57)}....</p>
                   </div>
                 </CardContent>
+                <p className=" hidden max-sm:block text-center">
+                  {item.id === 0
+                    ? "1 of 4"
+                    : item.id === 1
+                    ? "2 of 4"
+                    : item.id === 2
+                    ? "3 of 4"
+                    : item.id === 3
+                    ? "4 of 4"
+                    : ""}
+                </p>
               </Card>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-[#F59E18] hover:bg-[#127A88]" />
-          <CarouselNext className="bg-[#F59E18] hover:bg-[#127A88]" />
+          <CarouselPrevious className="bg-[#F59E18] hover:bg-[#127A88] max-sm:hidden" />
+          <CarouselNext className="bg-[#F59E18] hover:bg-[#127A88] max-sm:hidden" />
         </Carousel>
       </div>
     </section>
