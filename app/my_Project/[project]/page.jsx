@@ -24,9 +24,9 @@ export default function SinglePorject() {
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div className="relative group w-[500px]">
+        <div className="relative group w-[500px] max-sm:w-[350px]">
           <Image
-            className="h-[350px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110 max-sm:w-96 max-sm:mx-auto"
+            className="h-[350px] max-sm:h-[220px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110"
             src={singleProject.image}
             alt={singleProject.badge}
             priority={true}
@@ -40,7 +40,7 @@ export default function SinglePorject() {
         </div>
 
         {/* description */}
-        <div className="space-y-3 max-sm:w-[400px] max-sm:mx-auto">
+        <div className="space-y-3 max-sm:w-[350px] max-sm:mx-auto">
           <div className="flex gap-4 items-center">
             <h1 className="border-b-2 font-bold border-gray-400 pb-5 max-sm:text-2xl">
               Name: "{singleProject.title}"
@@ -60,7 +60,7 @@ export default function SinglePorject() {
             </p>
           </div>
 
-          <div className="w-96 max-md:w-[500px] max-sm:w-[400px] space-y-2">
+          <div className="w-96 max-md:w-[500px] max-sm:w-[350px] space-y-2">
             <div className="flex gap-4 items-center">
               <Circle
                 size={18}

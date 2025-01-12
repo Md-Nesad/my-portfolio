@@ -87,12 +87,12 @@ export default function LatestProject({ text }) {
       </div>
 
       <div>
-        <Carousel className="w-full max-w-[815px] max-md:w-[400px] max-md:mx-auto">
-          <CarouselContent className="gap-4 mx-auto w-[815px] max-md:w-[400px]">
+        <Carousel className="w-full max-w-[815px] max-md:w-[340px] max-md:mx-auto">
+          <CarouselContent className="gap-4 mx-auto w-[815px] max-md:w-[340px]">
             {/* maping latest project */}
             {allProjects.slice(0, 4).map((item) => (
               <Card key={item.id} className="dark:bg-white dark:text-black">
-                <CardContent className=" w-[400px]">
+                <CardContent className=" w-[400px] max-md:w-[340px]">
                   <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                     {item.badge}
                   </Badge>

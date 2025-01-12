@@ -39,7 +39,7 @@ export default function MyProject() {
                     key={item.id}
                     className=" dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                   >
-                    <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                    <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                       <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                         {item.badge}
                       </Badge>
@@ -76,7 +76,7 @@ export default function MyProject() {
                       key={item.id}
                       className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -113,7 +113,7 @@ export default function MyProject() {
                       key={item.id}
                       className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -149,7 +149,7 @@ export default function MyProject() {
                       key={item.id}
                       className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -185,7 +185,7 @@ export default function MyProject() {
                       key={item.id}
                       className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
@@ -221,7 +221,7 @@ export default function MyProject() {
                       key={item.id}
                       className=" border-white dark:border-[#ffd18d] dark:bg-black flex hover:scale-105 sm:hover:scale-[1.03] transition duration-300"
                     >
-                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[400px]">
+                      <CardContent className="md:w-[400px] sm:w-[300px] max-sm:w-[340px]">
                         <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                           {item.badge}
                         </Badge>
