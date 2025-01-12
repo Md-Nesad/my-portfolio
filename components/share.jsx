@@ -11,7 +11,7 @@ import React from "react";
 
 export default function Share() {
   return (
-    <div className="flex gap-6 text-[#F59E18]">
+    <div className="flex gap-6 max-sm:gap-5 text-[#F59E18]">
       <Link
         href={"https://www.linkedin.com/in/md-nesad-30b5bb286/"}
         target="blank"

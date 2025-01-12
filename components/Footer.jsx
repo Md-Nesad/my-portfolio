@@ -17,9 +17,11 @@ export default function Footer() {
         </Link>
       </div>
 
-      <div className="bg-[#127A88] text-white place-items-center py-10 space-y-4">
+      <div className="bg-[#127A88] text-white md:flex md:justify-around py-7 space-y-3 place-items-center">
         <Share />
-        <p>@copyright-Md.Nesad (Front end developer)</p>
+        <p className="max-sm:text-sm">
+          @copyright-Md.Nesad (Front end developer).
+        </p>
       </div>
     </footer>
   );

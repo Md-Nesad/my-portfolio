@@ -80,6 +80,7 @@ const Navbar = () => {
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link
               href={"/"}
+              onClick={() => setToggler(false)}
               className={
                 currentPath === "/"
                   ? "text-white font-semibold bg-black px-2 py-1 rounded-sm"
@@ -92,6 +93,7 @@ const Navbar = () => {
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link
               href={"/my_Project"}
+              onClick={() => setToggler(false)}
               className={
                 currentPath === "/my_Project"
                   ? "text-white font-semibold bg-black px-2 py-1 rounded-sm"
@@ -104,6 +106,7 @@ const Navbar = () => {
           <div className="block bg-[#1d8391] p-3 hover:bg-[#082c31] cursor-pointer transition duration-300">
             <Link
               href={"/contact"}
+              onClick={() => setToggler(false)}
               className={
                 currentPath === "/contact"
                   ? "text-white font-semibold bg-black px-2 py-1 rounded-sm"

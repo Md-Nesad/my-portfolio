@@ -121,8 +121,8 @@ export default function LatestProject({ text }) {
               </Card>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-[#F59E18] hover:bg-[#127A88] max-sm:hidden" />
-          <CarouselNext className="bg-[#F59E18] hover:bg-[#127A88] max-sm:hidden" />
+          <CarouselPrevious className="bg-[#F59E18] hover:bg-[#127A88] hover:text-white max-sm:hidden" />
+          <CarouselNext className="bg-[#F59E18] hover:bg-[#127A88] hover:text-white max-sm:hidden" />
         </Carousel>
       </div>
     </section>

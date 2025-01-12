@@ -102,9 +102,11 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="bg-[#127A88] text-white place-items-center py-10 space-y-4 fixed bottom-0 w-full">
+      <div className="bg-[#127A88] text-white md:flex md:justify-around py-8 space-y-4 place-items-center fixed bottom-0 w-full">
         <Share />
-        <p>@copyright-Md.Nesad (Front end developer)</p>
+        <p className="max-sm:text-sm">
+          @copyright-Md.Nesad (Front end developer).
+        </p>
       </div>
     </section>
   );

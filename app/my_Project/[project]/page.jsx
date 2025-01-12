@@ -24,7 +24,7 @@ export default function SinglePorject() {
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div className="relative group w-[500px] max-sm:w-[330px]">
+        <div className="relative group w-[500px] max-sm:w-[330px] max-sm:mx-aut">
           <Image
             className="h-[350px] max-sm:h-[210px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110"
             src={singleProject.image}
