@@ -18,15 +18,15 @@ export default function SinglePorject() {
   }
   return (
     <div className="mt-20 pb-36 pt-10 dark:bg-black max-md:place-items-center">
-      <h1 className="font-bold text-center max-sm:text-lg">
+      <h1 className="font-bold text-center max-sm:text-lg max-sm:w-[340px]">
         Review of {singleProject.name}
       </h1>
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div className="relative group w-[500px] max-sm:w-[340px]">
+        <div className="relative group w-[500px] max-sm:w-[330px]">
           <Image
-            className="h-[350px] max-sm:h-[220px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110"
+            className="h-[350px] max-sm:h-[210px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110"
             src={singleProject.image}
             alt={singleProject.badge}
             priority={true}
@@ -47,7 +47,7 @@ export default function SinglePorject() {
             </h1>
           </div>
 
-          <div className="w-96 space-y-2">
+          <div className="w-96 max-sm:w-[340px] space-y-2">
             <div className="flex gap-4 items-center">
               <Circle
                 size={18}
