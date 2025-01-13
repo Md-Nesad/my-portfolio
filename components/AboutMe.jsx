@@ -29,8 +29,11 @@ export default function AboutMe() {
           <Image src={AboutImage} alt="AboutImage" width={700} />
         </div>
 
-        <div className="pr-40 mt-10 pl-32 max-sm:px-5">
-          <Tabs defaultValue="personal_Info" className="w-[500px] h-[500px]">
+        <div className="md:pr-40 mt-10 md:pl-32 max-md:place-items-center">
+          <Tabs
+            defaultValue="personal_Info"
+            className="w-[500px] max-sm:w-[340px] h-[500px]"
+          >
             <TabsList>
               <TabsTrigger value="personal_Info">Personal Info</TabsTrigger>
 
@@ -39,7 +42,7 @@ export default function AboutMe() {
               <TabsTrigger value="skills">Skills</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="personal_Info" className="max-sm:w-[400px]">
+            <TabsContent value="personal_Info" className="max-sm:w-[340px]">
               <div className="mt-5 max-md:mb-8">
                 <h1 className="text-xl font-bold mb-5">
                   Unmatched Service Quality for over 2 Years
@@ -50,7 +53,7 @@ export default function AboutMe() {
                 </p>
               </div>
 
-              <div className=" columns-2 col-span-3 space-y-3 mt-3 max-sm:text-sm">
+              <div className=" sm:columns-2 col-span-3 space-y-3 mt-3 max-sm:text-sm">
                 <div className="flex gap-3">
                   <CircleUser className="text-[#F59E18]" />
                   <p>Md. Nesad</p>
@@ -72,12 +75,12 @@ export default function AboutMe() {
                 </div>
 
                 <div className="flex gap-3">
-                  <GraduationCap className="text-[#F59E18] w-11" />
+                  <GraduationCap className="text-[#F59E18]" />
                   <p>Master in BBA, Self learner Compute Science</p>
                 </div>
               </div>
 
-              <div>
+              <div className="max-sm:pt-5">
                 <p className="text-[#F59E18] border-[#acaaaa] border-b-2 py-2">
                   Language Skill
                 </p>
@@ -88,7 +91,7 @@ export default function AboutMe() {
 
             <TabsContent
               value="qualification"
-              className="max-sm:w-[400px] max-sm:text-[12px]"
+              className="max-sm:w-[340px] max-sm:text-[12px]"
             >
               <h1 className="font-bold text-2xl mt-5 border-[#acaaaa] border-b-2 py-2">
                 My Awesome Journey
@@ -209,7 +212,7 @@ export default function AboutMe() {
               </div>
             </TabsContent>
 
-            <TabsContent value="skills" className="max-sm:w-[400px]">
+            <TabsContent value="skills" className="max-sm:w-[340px]">
               <div>
                 <div>
                   <h1 className="mt-5">Tools I use everyday...</h1>

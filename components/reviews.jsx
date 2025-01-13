@@ -44,7 +44,7 @@ export default function Reviews() {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className="w-[360px] h-[250px] py-8 px-6 rounded-md drop-shadow-xl bg-white dark:text-black"
+            className="max-sm:w-[340px] max-md:w-[500px] md:w-[340px] h-[250px] py-8 px-6 rounded-md drop-shadow-xl bg-white dark:text-black"
           >
             <div className="flex items-center gap-3">
               <Image

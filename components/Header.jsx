@@ -43,14 +43,14 @@ export default function Header() {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <header className="h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 pl-7 dark:bg-black">
-      <div className="flex justify-around items-center">
-        <div>
+    <header className="h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 sm:pl-5 dark:bg-black max-md:mb-16">
+      <div className="sm:flex sm:justify-around sm:items-center">
+        <div className="sm:w-[300px] max-sm:w-[340px] max-sm:mx-auto max-sm:text-center">
           <motion.div
             variants={textContainer}
             initial="hidden"
             animate="show"
-            className=" space-y-3 md:space-y-4 "
+            className="space-y-4"
           >
             <motion.p variants={textItem}>Front end developer</motion.p>
             <motion.h1
@@ -71,7 +71,7 @@ export default function Header() {
             </motion.p>
           </motion.div>
 
-          <div className="space-x-4 pb-5 md:flex sm:space-y-2 md:space-y-0">
+          <div className="space-x-4 pb-10 md:flex sm:space-y-2 md:space-y-0">
             <Link href={"/contact"}>
               <Button className="bg-[#F59E18] rounded-full md:text-lg hover:bg-[#127A88] transition dark:text-white hover:scale-105">
                 Contact me
@@ -86,13 +86,8 @@ export default function Header() {
           <Share />
         </div>
 
-        <div className="hidden sm:block md:dark:ring-1 md:dark:ring-[#ffd18d] rounded-md">
-          <Image
-            src={InnerImage}
-            alt="innerImage"
-            width={600}
-            priority={true}
-          />
+        <div className="hidden sm:block md:dark:ring-1 md:dark:ring-[#ffd18d] rounded-md sm:w-[600px] max-sm:w-0">
+          <Image src={InnerImage} alt="innerImage" priority={true} />
         </div>
       </div>
     </header>

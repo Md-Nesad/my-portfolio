@@ -24,7 +24,7 @@ export default function SinglePorject() {
 
       <div className="md:flex md:justify-evenly md:items-center mt-20 max-md:space-y-28">
         {/* image */}
-        <div className="relative group w-[500px] max-sm:w-[330px] max-sm:mx-aut">
+        <div className="relative group w-[500px] max-sm:w-[340px] max-sm:mx-auto">
           <Image
             className="h-[350px] max-sm:h-[210px] rounded-md drop-shadow-2xl hover:scale-105 transition opacity-70 hover:opacity-100 dark:opacity-100 scale-110"
             src={singleProject.image}
@@ -32,9 +32,9 @@ export default function SinglePorject() {
             priority={true}
             placeholder="blur"
           />
-          <div className=" absolute top-[50%] left-[50%] opacity-0 group-hover:opacity-100 transition-opacity bg-[#F59E18] p-3 rounded-md text-white">
+          <div className=" absolute top-[45%] left-[45%] opacity-0 group-hover:opacity-100 transition-opacity bg-[#F59E18] p-3 rounded-md text-white hover:bg-[#127A88]">
             <Link href={singleProject.link} title="Go live" target="blank">
-              <ExternalLink className="" />
+              <ExternalLink />
             </Link>
           </div>
         </div>

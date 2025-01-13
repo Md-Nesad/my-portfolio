@@ -14,8 +14,8 @@ const Navbar = () => {
     setToggler(!toggler);
   };
   return (
-    <nav className="z-50 w-full h-fit fixed top-0 overflow-hidden bg-[#127A88] sm:px-10 px-5">
-      <div className="container flex justify-between h-[12vh] items-center">
+    <nav className="z-10 w-full h-fit fixed top-0 overflow-hidden bg-[#127A88] sm:px-10 px-5">
+      <div className="flex justify-between h-[12vh] items-center">
         <div className="logo">
           <Link href={"/"}>
             <h4 className="text-2xl text-[#F59E18] tracking-tight font-bold">
@@ -24,7 +24,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="flex gap-x-10 items-center max-md:hidden">
+        <div className="md:flex md:gap-x-10 md:items-center max-md:hidden">
           <Link
             href={"/"}
             className={

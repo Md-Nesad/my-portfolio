@@ -67,7 +67,7 @@ export default function MyProject() {
 
           {/* get JavaScript project */}
           <TabsContent value="javascript">
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects
                 .filter((obj) => obj.badge.includes("JavaScript"))
                 .map((item) => (
@@ -104,7 +104,7 @@ export default function MyProject() {
 
           {/* get React projects */}
           <TabsContent value="react">
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects
                 .filter((obj) => obj.badge.includes("React js"))
                 .map((item) => (
@@ -140,7 +140,7 @@ export default function MyProject() {
           </TabsContent>
           {/* get next js project */}
           <TabsContent value="next">
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects
                 .filter((obj) => obj.optional?.includes("Next Project"))
                 .map((item) => (
@@ -176,7 +176,7 @@ export default function MyProject() {
           </TabsContent>
           {/* get full stack project */}
           <TabsContent value="full_stack">
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects
                 .filter((obj) => obj.optional?.includes("full stack"))
                 .map((item) => (
@@ -212,7 +212,7 @@ export default function MyProject() {
           </TabsContent>
           {/* get wordress projects */}
           <TabsContent value="wordpress">
-            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px]">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-7 sm:gap-3 md:w-[1200px] max-sm:space-y-10">
               {allProjects
                 .filter((obj) => obj.badge.includes("wordpress"))
                 .map((item) => (

@@ -20,7 +20,7 @@ export default function LatestProject({ text }) {
   const isInView = useInView(ref, { once: true });
   return (
     <section className="py-28 md:flex md:justify-around md:items-center dark:bg-black">
-      <div className="space-y-3 max-md:place-items-center text-center max-md:mb-10">
+      <div className="space-y-3 max-md:place-items-center text-center max-md:mb-20">
         <motion.div
           ref={ref}
           initial={{ scale: 0 }}
@@ -87,12 +87,12 @@ export default function LatestProject({ text }) {
       </div>
 
       <div>
-        <Carousel className="w-full max-w-[815px] max-md:w-[340px] max-md:mx-auto">
-          <CarouselContent className="gap-4 mx-auto w-[815px] max-md:w-[340px]">
+        <Carousel className="w-full max-w-[820px] max-sm:w-[340px] sm:w-[500px] md:w-[820px] max-md:mx-auto">
+          <CarouselContent className="gap-4 mx-auto sm:w-[500px] max-sm:w-[340px] md:w-[820px]">
             {/* maping latest project */}
             {allProjects.slice(0, 4).map((item) => (
               <Card key={item.id} className="dark:bg-white dark:text-black">
-                <CardContent className=" w-[400px] max-md:w-[340px]">
+                <CardContent className="sm:w-[500px] max-sm:w-[340px] md:w-[400px]">
                   <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                     {item.badge}
                   </Badge>

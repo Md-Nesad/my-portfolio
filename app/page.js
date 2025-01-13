@@ -11,13 +11,13 @@ export default function Home() {
     <>
       <Header />
       <AboutMe />
-      <section className="dark:bg-black dark:text-black pb-20">
-        <div className="flex gap-4 items-center font-bold pb-32 place-content-center">
+      <section className="dark:bg-black dark:text-black pb-20 max-md:pb-5">
+        <div className="flex gap-4 items-center font-bold pb-32 place-content-center max-sm:pt-20">
           <Flame className="text-[#F59E18]" />
           <h1 className="dark:text-white">Services</h1>
         </div>
 
-        <div className="md:flex place-content-center md:gap-x-20 max-md:space-y-10 max-md:place-items-center">
+        <div className="md:flex md:gap-x-20 max-md:space-y-10 max-sm:w-[340px] sm:w-[500px] md:w-[1200px] mx-auto">
           <Services
             text="Web design"
             icon={<Airplay size={70} strokeWidth={2} />}
