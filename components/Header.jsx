@@ -43,7 +43,7 @@ export default function Header() {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <header className="h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 sm:pl-5 dark:bg-black max-md:mb-16">
+    <header className="h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 sm:pl-5 dark:bg-black max-md:pb-16">
       <div className="sm:flex sm:justify-around sm:items-center">
         <div className="sm:w-[300px] max-sm:w-[340px] max-sm:mx-auto max-sm:text-center">
           <motion.div

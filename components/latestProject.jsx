@@ -92,7 +92,7 @@ export default function LatestProject({ text }) {
             {/* maping latest project */}
             {allProjects.slice(0, 4).map((item) => (
               <Card key={item.id} className="dark:bg-white dark:text-black">
-                <CardContent className="sm:w-[500px] max-sm:w-[340px] md:w-[400px]">
+                <CardContent className="sm:w-[500px] max-sm:w-[340px] md:w-[400px] max-sm:cursor-grab">
                   <Badge className="bg-[#F59E18] text-black dark:text-white hover:bg-[#127A88] hover:text-white mt-3">
                     {item.badge}
                   </Badge>
