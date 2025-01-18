@@ -6,7 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { allProjects } from "@/data/allProjects";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
-
+export const metadata = {
+  title: "My Project",
+};
 export default function MyProject() {
   return (
     <section className="mt-20 dark:bg-black">

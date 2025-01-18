@@ -3,7 +3,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 export const metadata = {
-  title: "Portfolio website",
+  title: {
+    default: "Home | Portfolio website",
+    template: "%s | Portfolio website",
+  },
   description: "Front end developer portfolio website",
 };
 
