@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header className='h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 sm:pl-5 dark:bg-black max-md:pb-16'>
       <div className='sm:flex sm:justify-between sm:items-center mx-auto'>
-        <div className='sm:w-[400px] max-sm:w-[440px] max-sm:mx-auto max-sm:text-center ml-20'>
+        <div className='max-sm:w-[400px] max-sm:mx-auto max-sm:text-center md:ml-20 max-sm:ml-2'>
           <motion.div
             variants={textContainer}
             initial='hidden'
