@@ -31,13 +31,13 @@ export default function Header() {
           >
             <motion.h1
               variants={textItem}
-              className='sm:text-xl md:text-3xl font-bold'
+              className='max-sm:text-xl md:text-3xl font-bold'
             >
               {TEXTS[index]}
             </motion.h1>
             <motion.h1
               variants={textItem}
-              className='sm:text-xl md:text-3xl font-bold'
+              className='max-sm:text-xl md:text-3xl font-bold'
             >
               This is Md. Nesad.
             </motion.h1>
