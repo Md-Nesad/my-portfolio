@@ -21,8 +21,8 @@ export default function Header() {
 
   return (
     <header className='h-[60vh] md:h-[80vh] mt-20 md:p-20 py-10 sm:pl-5 dark:bg-black max-md:pb-16'>
-      <div className='sm:flex sm:justify-between sm:items-center mx-auto'>
-        <div className='max-sm:w-[400px] max-sm:mx-auto max-sm:text-center md:ml-20 max-sm:ml-2'>
+      <div className='flex justify-between items-center mx-auto'>
+        <div className='max-sm:w-[400px] max-sm:mx-auto max-sm:text-center ml-20'>
           <motion.div
             variants={textContainer}
             initial='hidden'
@@ -41,7 +41,10 @@ export default function Header() {
             >
               This is Md. Nesad.
             </motion.h1>
-            <motion.p variants={textItem} className='pb-5'>
+            <motion.p
+              variants={textItem}
+              className='pb-5 max-sm:text-sm max-sm:text-center'
+            >
               I am a skilled and professional <br /> Front End Developer with
               basic of backend.
             </motion.p>
